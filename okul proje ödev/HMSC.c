@@ -148,7 +148,7 @@ int main(){     // ANA FONKSİYON
 		setcolor(10);
 		printf("\t\t *Lutfen menu seciminizi girin*:");
 		printf("\n\n");
-		printf(" \n 1'i sec -> Kutuphane");
+		printf(" \n 1'i sec -> Oda rezervasyonu yapin");
 		printf("\n------------------------");
 		printf(" \n 2'yi sec -> Musteri Kaydini Goruntule");
 		printf("\n----------------------------------");
