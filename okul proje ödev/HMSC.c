@@ -37,10 +37,10 @@ void login()
 {
 	system("cls");
 	
-    printf("\n  **************************  LOGIN FORM  **************************  ");
-    printf(" \n                       ENTER USERNAME:-");
+    printf("\n  **************************  GIRIS FORMU  **************************  ");
+    printf(" \n                       KULLANICI ADI GIRINIZ:-");
 	scanf("%s", &uname); 
-	printf(" \n                       ENTER PASSWORD:-");
+	printf(" \n                       PAROLANIZI GIRINIZ:-");
 	while(i<10)
 	{
 	    pword[i]=getch();
@@ -55,13 +55,13 @@ void login()
 	//scanf("%s",&pword); 
 		if(strcmp(uname,user)==0 && strcmp(pword,pass)==0)
 	{
-	printf("  \n\n\n       WELCOME !!!! LOGIN IS SUCCESSFUL");
+	printf("  \n\n\n       HOSGELDINIZ !!!! GIRIS BASARILI");
 	
 	break;
 	}
 	else
 	{
-		printf("\n        SORRY !!!!  LOGIN IS UNSUCESSFUL");
+		printf("\n        ÜZGÜNÜZ !!!!  GIRIS BASARISIZ");
 		a++;
 		
 		getch();
@@ -71,7 +71,7 @@ void login()
 	while(a<=2);
 	if (a>2)
 	{
-		printf("\nSorry you have entered the wrong username and password for four times!!!");
+		printf("\nÜzgünüz, dört kez yanlış kullanıcı adı ve şifre girdiniz!!!");
 		
 		getch();
 		
@@ -91,7 +91,7 @@ struct CustomerDetails   //STRUCTURE DECLARATION
 	char arrivaldate[10];
 }s;
 
-int main(){     // MAIN FUNCTION	
+int main(){     // ANA FONKSİYON	
 	int i=0;
 	
 	time_t t;
@@ -125,10 +125,10 @@ int main(){     // MAIN FUNCTION
 	printf("\t\t*************************************************\n\n\n");
 		for(i=0;i<80;i++)
 		printf("-");
-	    printf("\nCurrent date and time : %s",ctime(&t));
+	    printf("\nGuncel tarih ve saat : %s",ctime(&t));
 	    for(i=0;i<80;i++)
 		printf("-");
-	printf(" \n Press any key to continue:");
+	printf(" \nDevam etmek icin herhangi bir tusa basın:");
 	
 	getch();	
     system("cls");
@@ -141,16 +141,16 @@ int main(){     // MAIN FUNCTION
 		 for(i=0;i<80;i++)
 		printf("-");
 		printf("\n");
-		printf("   ******************************  |MAIN MENU|  ***************************** \n");
+		printf("   ******************************  |ANA MENU|  ***************************** \n");
 		for(i=0;i<80;i++)
 		printf("-");
 		printf("\n");
 		setcolor(10);
-		printf("\t\t *Please enter your choice for menu*:");
+		printf("\t\t *Lutfen menu seciminizi girin*:");
 		printf("\n\n");
-		printf(" \n Enter 1 -> Book a room");
+		printf(" \n 1'i sec -> Book a room");
 		printf("\n------------------------");
-		printf(" \n Enter 2 -> View Customer Record");
+		printf(" \n 2'yi sec -> View Customer Record");
 		printf("\n----------------------------------");
 		printf(" \n Enter 3 -> Delete Customer Record");
 		printf("\n-----------------------------------");
