@@ -61,7 +61,7 @@ void login()
 	}
 	else
 	{
-		printf("\n        ÜZGÜNÜZ !!!!  GIRIS BASARISIZ");
+		printf("\n        UZGUNUZ !!!!  GIRIS BASARISIZ");
 		a++;
 		
 		getch();
@@ -71,7 +71,7 @@ void login()
 	while(a<=2);
 	if (a>2)
 	{
-		printf("\nÜzgünüz, dört kez yanliş kullanici adi ve şifre girdiniz!!!");
+		printf("\nUzgunuz, dort kez yanlis kullanici adi ve sifre girdiniz!!!");
 		
 		getch();
 		
@@ -156,9 +156,9 @@ int main(){     // ANA FONKSİYON
 		printf("\n-----------------------------------");
 		printf(" \n 4'u sec -> Musteri kaydini ara");
 		printf("\n-----------------------------------");
-		printf(" \n 5'i sec -> Kaydi düzenleme");
+		printf(" \n 5'i sec -> Kaydi duzenleme");
 		printf("\n-----------------------");
-		printf(" \n 6'yı sec -> Cikis");
+		printf(" \n 6'yi sec -> Cikis");
 		printf("\n-----------------");
 		printf("\n");
 		for(i=0;i<80;i++)
@@ -253,11 +253,11 @@ void list()
 	printf("ODA    ");
 	printf("İSİM\t ");
 	printf("\tADRES ");
-	printf("\tTELEFONNUMARASİ ");
-	printf("\tMİLLİYET ");
+	printf("\tTELEFON NUMARASI ");
+	printf("\tMILLIYETI ");
 	printf("\tE-POSTA ");
 	printf("\t\t  SURE ");
-	printf("\t GELİSTARİHİ \n");
+	printf("\t GELIS TARIHI \n");
 	
 	for(i=0;i<118;i++)
 		printf("-");
@@ -302,7 +302,7 @@ void delete1()
 	}
 	if(i==1)
 	{       
-		printf("\n\n Bu Oda numarasindaki Müşteri kayitlari bulunamadi!!");
+		printf("\n\n Bu Oda numarasindaki Müsteri kayitlari bulunamadi!!");
 		//remove("E:/file.txt");
 	   //rename("E:/temp.txt","E:/file.txt");
 		getch();
@@ -330,7 +330,7 @@ system("cls");
 	if(f==0)
 		exit(0);
 	fflush(stdin);
-	printf("Ayrintilarini aramak için müşterinin oda numarasini girin: \n");
+	printf("Ayrintilarini aramak icin müsterinin oda numarasini girin: \n");
 	scanf("%s", roomnumber);
 	while(fread(&s,sizeof(s),1,f)==1)
 	{
@@ -350,7 +350,7 @@ system("cls");
 		}
 	}
 	if(flag==1){	
-		printf("\n\tİstenen Musteri bulunamadi!");
+		printf("\n\tIstenen Musteri bulunamadi!");
 	}
 	getch();
 	fclose(f);
@@ -375,7 +375,7 @@ void edit()
 			k=0;
 			printf("\nOda numarasini girin     :");
 			gets(s.roomnumber);
-			printf("\nİsim giriniz.   :");
+			printf("\nIsim giriniz.   :");
 			fflush(stdin);
 			scanf("%s",&s.name);
 			printf("\nAdres giriniz.       :");
@@ -396,12 +396,12 @@ void edit()
 		}
 	}
 	if(k==1){
-		printf("\n\nKAYIT MEVCUT DEGİL!!!!");
+		printf("\n\nKAYIT MEVCUT DEGIL!!!!");
 		fclose(f);
 		getch();
 	}else{
 	fclose(f);
-	printf("\n\n\t\tKAYDİNİZ BASARIYLA DUZENLENDİ!!!");
+	printf("\n\n\t\tKAYDINIZ BASARIYLA DUZENLENDI!!!");
 	getch();
 }
 }
