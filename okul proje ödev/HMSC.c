@@ -206,7 +206,7 @@ void add()
 	{   f=fopen("add.txt","w+");
 		system("cls");
 		printf("Lutfen biz bilgisayarinizda veritabanimizi kurarken bekleyiniz!!");
-		printf("\n İslem tamamlandi. Devam etmek icin herhangi bir tusa basiniz.!! ");
+		printf("\n Islem tamamlandi. Devam etmek icin herhangi bir tusa basiniz.!! ");
 		getch();
 	}
 	while(1)
@@ -217,7 +217,7 @@ void add()
 		printf("\n Oda numarasini girin.:\n");
 		scanf("\n%s",s.roomnumber);
 		fflush(stdin);
-		printf("İsim giriniz.:\n");
+		printf("Isim giriniz.:\n");
 		scanf("%s",s.name);
 		printf("Adres giriniz.:\n");
 		scanf("%s",s.address);
@@ -234,7 +234,7 @@ void add()
 		fwrite(&s,sizeof(s),1,f);
 		fflush(stdin);
 		printf("\n\n1 Oda basariyla rezerve edildi.!!");
-		printf("\n Cıkmak icin esc tusuna, baska bir musteri ayrintisi eklemek icin baska bir tusa basiniz.:");
+		printf("\n Cikmak icin esc tusuna, baska bir musteri ayrintisi eklemek icin baska bir tusa basiniz.:");
 		test=getche();
 		if(test==27)
 			break;
@@ -251,7 +251,7 @@ void list()
 		exit(0);
 	system("cls");
 	printf("ODA    ");
-	printf("İSİM\t ");
+	printf("ISIM\t ");
 	printf("\tADRES ");
 	printf("\tTELEFON NUMARASI ");
 	printf("\tMILLIYETI ");
@@ -302,7 +302,7 @@ void delete1()
 	}
 	if(i==1)
 	{       
-		printf("\n\n Bu Oda numarasindaki Müsteri kayitlari bulunamadi!!");
+		printf("\n\n Bu Oda numarasindaki Musteri kayitlari bulunamadi!!");
 		//remove("E:/file.txt");
 	   //rename("E:/temp.txt","E:/file.txt");
 		getch();
@@ -314,7 +314,7 @@ void delete1()
 	fclose(t);
 	remove("add.txt");
 	rename("temp.txt","add.txt");
-	printf("\n\nMusteri başariyla kaldirildi....");
+	printf("\n\nMusteri basariyla kaldirildi....");
 	fclose(f);
 	fclose(t);
 	getch();
@@ -338,7 +338,7 @@ system("cls");
 			flag=0;
 			printf("\n\tRecord Found\n ");
 			printf("\nOda numarasi :\t%s",s.roomnumber);
-			printf("\nİsim:\t%s",s.name);
+			printf("\nIsim:\t%s",s.name);
 			printf("\nAdres:\t%s",s.address);
 			printf("\nTelefon numarasi:\t%s",s.phonenumber);
 			printf("\nMilliyeti:\t%s",s.nationality);
