@@ -83,8 +83,8 @@ struct CustomerDetails   //STRUCTURE DECLARATION
 {
 	char odanumarasi[10];
 	char isim[20];
-	char address[25];
-	char phonenumber[15];
+	char adres[25];
+	char telefonnumarasi[15];
 	char nationality[15];	
 	char email[20];
 	char period[10];
@@ -220,9 +220,9 @@ void add()
 		printf("Isim giriniz.:\n");
 		scanf("%s",s.isim);
 		printf("Adres giriniz.:\n");
-		scanf("%s",s.address);
+		scanf("%s",s.adres);
 		printf("Telefon numarasini giriniz.:\n");
-		scanf("%s",s.phonenumber);
+		scanf("%s",s.telefonnumarasi);
 		printf("Milliyetini giriniz.:\n");
 		scanf("%s",s.nationality);
 		printf("E-postayi giriniz.:\n");
@@ -265,10 +265,10 @@ void list()
 	{
 		/*printf("ODANUMARASİ :\t%s\n",s.odanumarasi);
 		printf("İSİM:\t%s\n",,s.isim);
-		printf("ADDRESS:\t%s\n",s.address);
-		printf("PHONENUMBER:\t%s\n",s.phonenumber);
+		printf("ADRES:\t%s\n",s.adres);
+		printf("TELEFONNUMARASİ:\t%s\n",s.telefonnumarasi);
 		printf("NATIONALITY \n");*/
-		printf("\n%s \t%s \t\t%s \t\t%s \t%s  \t%s  \t     %s  \t  %s",s.odanumarasi, s.isim , s.address , s.phonenumber ,s.nationality ,s.email,s.period,  s.arrivaldate);
+		printf("\n%s \t%s \t\t%s \t\t%s \t%s  \t%s  \t     %s  \t  %s",s.odanumarasi, s.isim , s.adres , s.telefonnumarasi ,s.nationality ,s.email,s.period,  s.arrivaldate);
 	}
 	printf("\n");
 	for(i=0;i<118;i++)
@@ -339,8 +339,8 @@ system("cls");
 			printf("\n\tRecord Found\n ");
 			printf("\nOda numarasi :\t%s",s.odanumarasi);
 			printf("\nIsim:\t%s",s.isim);
-			printf("\nAdres:\t%s",s.address);
-			printf("\nTelefon numarasi:\t%s",s.phonenumber);
+			printf("\nAdres:\t%s",s.adres);
+			printf("\nTelefon numarasi:\t%s",s.telefonnumarasi);
 			printf("\nMilliyeti:\t%s",s.nationality);
 			printf("\nE-Posta:\t%s",s.email);
 			printf("\nSure:\t%s",s.period);
@@ -379,9 +379,9 @@ void edit()
 			fflush(stdin);
 			scanf("%s",&s.isim);
 			printf("\nAdres giriniz.       :");
-			scanf("%s",&s.address);
+			scanf("%s",&s.adres);
 			printf("\nTelefon numarasi giriniz. :");
-			scanf("%f",&s.phonenumber);
+			scanf("%f",&s.telefonnumarasi);
 			printf("\nMilliyetinizi giriniz. :");
 			scanf("%s",&s.nationality);
 			printf("\nE-Postanizi giriniz :");
