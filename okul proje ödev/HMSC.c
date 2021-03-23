@@ -29,9 +29,9 @@ void login()
 {
 	
 	int a=0,i=0;
-    char uname[10],c=' '; 
-    char pword[10],code[10];
-    char user[10]="emre";
+    char ad[10],c=' '; 
+    char sifre[10],code[10];
+    char kullanici[10]="emre";
     char pass[10]="akyol";
     do
 {
@@ -39,21 +39,21 @@ void login()
 	
     printf("\n  **************************  GIRIS FORMU  **************************  ");
     printf(" \n                       KULLANICI ADI GIRINIZ:-");
-	scanf("%s", &uname); 
+	scanf("%s", &ad); 
 	printf(" \n                       PAROLANIZI GIRINIZ:-");
 	while(i<10)
 	{
-	    pword[i]=getch();
-	    c=pword[i];
+	    sifre[i]=getch();
+	    c=sifre[i];
 	    if(c==13) break;
 	    else printf("*");
 	    i++;
 	}
-	pword[i]='\0';
-	//char code=pword;
+	sifre[i]='\0';
+	//char code=sifre;
 	i=0;
-	//scanf("%s",&pword); 
-		if(strcmp(uname,user)==0 && strcmp(pword,pass)==0)
+	//scanf("%s",&sifre); 
+		if(strcmp(ad,kullanici)==0 && strcmp(sifre,pass)==0)
 	{
 	printf("  \n\n\n       HOSGELDINIZ !!!! GIRIS BASARILI");
 	
@@ -81,8 +81,8 @@ void login()
 
 struct CustomerDetails   //STRUCTURE DECLARATION
 {
-	char roomnumber[10];
-	char name[20];
+	char odanumarasi[10];
+	char isim[20];
 	char address[25];
 	char phonenumber[15];
 	char nationality[15];	
@@ -215,10 +215,10 @@ void add()
 		printf("\n Musteri ayrintilarini girin. :");
 		printf("\n**************************");
 		printf("\n Oda numarasini girin.:\n");
-		scanf("\n%s",s.roomnumber);
+		scanf("\n%s",s.odanumarasi);
 		fflush(stdin);
 		printf("Isim giriniz.:\n");
-		scanf("%s",s.name);
+		scanf("%s",s.isim);
 		printf("Adres giriniz.:\n");
 		scanf("%s",s.address);
 		printf("Telefon numarasini giriniz.:\n");
@@ -263,12 +263,12 @@ void list()
 		printf("-");
 	while(fread(&s,sizeof(s),1,f)==1)
 	{
-		/*printf("ROOMNUMBER :\t%s\n",s.roomnumber);
-		printf("NAME:\t%s\n",,s.name);
+		/*printf("ODANUMARASİ :\t%s\n",s.odanumarasi);
+		printf("İSİM:\t%s\n",,s.isim);
 		printf("ADDRESS:\t%s\n",s.address);
 		printf("PHONENUMBER:\t%s\n",s.phonenumber);
 		printf("NATIONALITY \n");*/
-		printf("\n%s \t%s \t\t%s \t\t%s \t%s  \t%s  \t     %s  \t  %s",s.roomnumber, s.name , s.address , s.phonenumber ,s.nationality ,s.email,s.period,  s.arrivaldate);
+		printf("\n%s \t%s \t\t%s \t\t%s \t%s  \t%s  \t     %s  \t  %s",s.odanumarasi, s.isim , s.address , s.phonenumber ,s.nationality ,s.email,s.period,  s.arrivaldate);
 	}
 	printf("\n");
 	for(i=0;i<118;i++)
@@ -282,7 +282,7 @@ void delete1()
 {
 	FILE *f,*t;
 	int i=1;
-	char roomnumber[20];
+	char odanumarasi[20];
 	if((t=fopen("temp.txt","w"))==NULL)
 	exit(0);
 	if((f=fopen("add.txt","r"))==NULL)
@@ -290,10 +290,10 @@ void delete1()
 	system("cls");
 	printf("Veri tabanindan silinecek otelin Oda Numarasini giriniz: \n");
 	fflush(stdin);
-	scanf("%s",roomnumber);
+	scanf("%s",odanumarasi);
 	while(fread(&s,sizeof(s),1,f)==1)
 	{
-		if(strcmp(s.roomnumber,roomnumber)==0)
+		if(strcmp(s.odanumarasi,odanumarasi)==0)
 		{       i=0;
 			continue;
 		}
@@ -324,21 +324,21 @@ void search()
 {
 system("cls");
 	FILE *f;
-	char roomnumber[20];
+	char odanumarasi[20];
 	int flag=1;
 	f=fopen("add.txt","r+");
 	if(f==0)
 		exit(0);
 	fflush(stdin);
 	printf("Ayrintilarini aramak icin müsterinin oda numarasini girin: \n");
-	scanf("%s", roomnumber);
+	scanf("%s", odanumarasi);
 	while(fread(&s,sizeof(s),1,f)==1)
 	{
-		if(strcmp(s.roomnumber,roomnumber)==0){
+		if(strcmp(s.odanumarasi,odanumarasi)==0){
 			flag=0;
 			printf("\n\tRecord Found\n ");
-			printf("\nOda numarasi :\t%s",s.roomnumber);
-			printf("\nIsim:\t%s",s.name);
+			printf("\nOda numarasi :\t%s",s.odanumarasi);
+			printf("\nIsim:\t%s",s.isim);
 			printf("\nAdres:\t%s",s.address);
 			printf("\nTelefon numarasi:\t%s",s.phonenumber);
 			printf("\nMilliyeti:\t%s",s.nationality);
@@ -360,24 +360,24 @@ void edit()
 {
 	FILE *f;
 	int k=1;
-	char roomnumber[20];
+	char odanumarasi[20];
 	long int size=sizeof(s);
 	if((f=fopen("add.txt","r+"))==NULL)
 		exit(0);
 	system("cls");
 	printf("Duzenlemek icin musterinin Oda numarasini girin:\n\n");
-	scanf("%[^\n]",roomnumber);
+	scanf("%[^\n]",odanumarasi);
 	fflush(stdin);
 	while(fread(&s,sizeof(s),1,f)==1)
 	{
-		if(strcmp(s.roomnumber,roomnumber)==0)
+		if(strcmp(s.odanumarasi,odanumarasi)==0)
 		{
 			k=0;
 			printf("\nOda numarasini girin     :");
-			gets(s.roomnumber);
+			gets(s.odanumarasi);
 			printf("\nIsim giriniz.   :");
 			fflush(stdin);
-			scanf("%s",&s.name);
+			scanf("%s",&s.isim);
 			printf("\nAdres giriniz.       :");
 			scanf("%s",&s.address);
 			printf("\nTelefon numarasi giriniz. :");
