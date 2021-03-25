@@ -11,7 +11,7 @@ void edit();  //GLOBALLY DECLARED FUNCTIONS N VARIABLE
 void delete1();
 void search();
 
-void setcolor(int ForgC)
+/*void setcolor(int ForgC)
 { WORD wColor;
 HANDLE hStdOut=GetStdHandle(STD_OUTPUT_HANDLE);
 CONSOLE_SCREEN_BUFFER_INFO csbi;
@@ -23,7 +23,7 @@ if(GetConsoleScreenBufferInfo(hStdOut,&csbi))
 	SetConsoleTextAttribute(hStdOut,wColor);
 	
 }
-}
+}*/
 
 void login()
 {
@@ -100,7 +100,7 @@ int main(){     // ANA FONKSİYON
 	char choice;
 
 	system("cls");   // FOR CLEARING SCREEN
-	setcolor(15);
+	//setcolor(15);
 	printf(" -------------------------------------------------------------------------\n");
 	printf("|                                                                         |\n");      
 	printf("|                                                                         |\n");
@@ -137,7 +137,7 @@ int main(){     // ANA FONKSİYON
 	while (1)      // INFINITE LOOP
 	{
 		system("cls");
-		setcolor(10);
+		//setcolor(10);
 		 for(i=0;i<80;i++)
 		printf("-");
 		printf("\n");
@@ -145,7 +145,7 @@ int main(){     // ANA FONKSİYON
 		for(i=0;i<80;i++)
 		printf("-");
 		printf("\n");
-		setcolor(10);
+		//setcolor(10);
 		printf("\t\t *Lutfen menu seciminizi girin*:");
 		printf("\n\n");
 		printf(" \n 1'i sec -> Oda rezervasyonu yapin");
