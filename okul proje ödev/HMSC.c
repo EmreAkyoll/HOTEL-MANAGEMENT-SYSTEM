@@ -32,7 +32,7 @@ void login()
     char ad[10],c=' '; 
     char sifre[10],code[10];
     char kullanici[10]="emre";
-    char pass[10]="akyol";
+    char parola[10]="akyol";
     do
 {
 	system("cls");
@@ -53,7 +53,7 @@ void login()
 	//char code=sifre;
 	i=0;
 	//scanf("%s",&sifre); 
-		if(strcmp(ad,kullanici)==0 && strcmp(sifre,pass)==0)
+		if(strcmp(ad,kullanici)==0 && strcmp(sifre,parola)==0)
 	{
 	printf("  \n\n\n       HOSGELDINIZ !!!! GIRIS BASARILI");
 	
@@ -85,10 +85,10 @@ struct CustomerDetails   //STRUCTURE DECLARATION
 	char isim[20];
 	char adres[25];
 	char telefonnumarasi[15];
-	char nationality[15];	
-	char email[20];
-	char period[10];
-	char arrivaldate[10];
+	char milliyeti[15];	
+	char e-posta[20];
+	char sure[10];
+	char gelistarihi[10];
 }s;
 
 int main(){     // ANA FONKSİYON	
@@ -99,7 +99,7 @@ int main(){     // ANA FONKSİYON
 	char customername;
 	char choice;
 
-	system("cls");   // FOR CLEARING SCREEN
+	system("cls");   // EKRANİ TEMİZLEMEK İCİN
 	//setcolor(15);
 	printf(" -------------------------------------------------------------------------\n");
 	printf("|                                                                         |\n");      
@@ -134,7 +134,7 @@ int main(){     // ANA FONKSİYON
     system("cls");
     login();
     system("cls");
-	while (1)      // INFINITE LOOP
+	while (1)      
 	{
 		system("cls");
 		//setcolor(10);
@@ -169,7 +169,7 @@ int main(){     // ANA FONKSİYON
 		
 		choice=getche();
 		choice=toupper(choice);
-		switch(choice)           // SWITCH STATEMENT
+		switch(choice)           
 		{	
 			case '1':
 				add();break;
@@ -224,13 +224,13 @@ void add()
 		printf("Telefon numarasini giriniz.:\n");
 		scanf("%s",s.telefonnumarasi);
 		printf("Milliyetini giriniz.:\n");
-		scanf("%s",s.nationality);
+		scanf("%s",s.milliyeti);
 		printf("E-postayi giriniz.:\n");
-		scanf(" %s",s.email);
+		scanf(" %s",s.e-posta);
 		printf("Sureyi giriniz.(\'x\'days):\n");
-		scanf("%s",&s.period);
+		scanf("%s",&s.sure);
 		printf("Gelis tarihini giriniz.(dd\\mm\\yyyy):\n");
-		scanf("%s",&s.arrivaldate);
+		scanf("%s",&s.gelistarihi);
 		fwrite(&s,sizeof(s),1,f);
 		fflush(stdin);
 		printf("\n\n1 Oda basariyla rezerve edildi.!!");
@@ -267,8 +267,8 @@ void list()
 		printf("İSİM:\t%s\n",,s.isim);
 		printf("ADRES:\t%s\n",s.adres);
 		printf("TELEFONNUMARASİ:\t%s\n",s.telefonnumarasi);
-		printf("NATIONALITY \n");*/
-		printf("\n%s \t%s \t\t%s \t\t%s \t%s  \t%s  \t     %s  \t  %s",s.odanumarasi, s.isim , s.adres , s.telefonnumarasi ,s.nationality ,s.email,s.period,  s.arrivaldate);
+		printf("MİLLİYETİ \n");*/
+		printf("\n%s \t%s \t\t%s \t\t%s \t%s  \t%s  \t     %s  \t  %s",s.odanumarasi, s.isim , s.adres , s.telefonnumarasi ,s.milliyeti ,s.e-posta,s.sure,  s.gelistarihi);
 	}
 	printf("\n");
 	for(i=0;i<118;i++)
@@ -341,10 +341,10 @@ system("cls");
 			printf("\nIsim:\t%s",s.isim);
 			printf("\nAdres:\t%s",s.adres);
 			printf("\nTelefon numarasi:\t%s",s.telefonnumarasi);
-			printf("\nMilliyeti:\t%s",s.nationality);
-			printf("\nE-Posta:\t%s",s.email);
-			printf("\nSure:\t%s",s.period);
-			printf("\nGelis Tarihi:\t%s",s.arrivaldate);
+			printf("\nMilliyeti:\t%s",s.milliyeti);
+			printf("\nE-Posta:\t%s",s.e-posta);
+			printf("\nSure:\t%s",s.sure);
+			printf("\nGelis Tarihi:\t%s",s.gelistarihi);
 			flag=0;
 			break;
 		}
@@ -383,14 +383,14 @@ void edit()
 			printf("\nTelefon numarasi giriniz. :");
 			scanf("%f",&s.telefonnumarasi);
 			printf("\nMilliyetinizi giriniz. :");
-			scanf("%s",&s.nationality);
+			scanf("%s",&s.milliyeti);
 			printf("\nE-Postanizi giriniz :");
-			scanf("%s",&s.email);
+			scanf("%s",&s.e-posta);
 			printf("\nSurenizi giriniz :");
-			scanf("%s",&s.period);
+			scanf("%s",&s.sure);
 			printf("\nGelis tarihinizi giriniz :");
-			scanf("%s",&s.arrivaldate);
-			fseek(f,size,SEEK_CUR);  //to go to desired position infile
+			scanf("%s",&s.gelistarihi);
+			fseek(f,size,SEEK_CUR);  //istenen pozisyona gitmek icin
 			fwrite(&s,sizeof(s),1,f);
 			break;
 		}
