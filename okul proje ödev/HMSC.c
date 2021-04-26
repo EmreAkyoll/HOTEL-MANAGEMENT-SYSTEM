@@ -268,7 +268,7 @@ void list()
 		printf("ADRES:\t%s\n",s.adres);
 		printf("TELEFONNUMARASİ:\t%s\n",s.telefonnumarasi);
 		printf("MİLLİYETİ \n");*/
-		printf("\n%s \t%s \t\t%s \t\t%s \t%s  \t%s  \t     %s  \t  %s",s.odanumarasi, s.isim , s.adres , s.telefonnumarasi ,s.milliyeti ,s.e-posta,s.sure,  s.gelistarihi);
+		printf("\n%s \t%s \t\t%s \t\t%s \t%s  \t%s  \t     %s  \t  %s",s.odanumarasi, s.isim , s.adres , s.telefonnumarasi ,s.milliyeti ,s.e_posta,s.sure,  s.gelistarihi);
 	}
 	printf("\n");
 	for(i=0;i<118;i++)
