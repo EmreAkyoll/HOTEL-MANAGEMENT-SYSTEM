@@ -86,7 +86,7 @@ struct CustomerDetails   //STRUCTURE DECLARATION
 	char adres[25];
 	char telefonnumarasi[15];
 	char milliyeti[15];	
-	char e-posta[20];
+	char e_posta[20];
 	char sure[10];
 	char gelistarihi[10];
 }s;
@@ -114,7 +114,7 @@ int main(){     // ANA FONKSİYON
  	printf("\t\t*************************************************\n");
 	printf("\t\t*                                               *\n");
 	printf("\t\t*       -----------------------------           *\n");
-	printf("\t\t*        WELCOME TO HOTEL DESERT CAVE           *\n");
+	printf("\t\t*        OTEL NİRVANAYA HOŞ GELDİNİZ.          *\n");
 	printf("\t\t*       -----------------------------           *\n");
 	printf("\t\t*                                               *\n");
 	printf("\t\t*                                               *\n");
@@ -226,7 +226,7 @@ void add()
 		printf("Milliyetini giriniz.:\n");
 		scanf("%s",s.milliyeti);
 		printf("E-postayi giriniz.:\n");
-		scanf(" %s",s.e-posta);
+		scanf(" %s",s.e_posta);
 		printf("Sureyi giriniz.(\'x\'days):\n");
 		scanf("%s",&s.sure);
 		printf("Gelis tarihini giriniz.(dd\\mm\\yyyy):\n");
@@ -255,7 +255,7 @@ void list()
 	printf("\tADRES ");
 	printf("\tTELEFON NUMARASI ");
 	printf("\tMILLIYETI ");
-	printf("\tE-POSTA ");
+	printf("\tE_POSTA ");
 	printf("\t\t  SURE ");
 	printf("\t GELIS TARIHI \n");
 	
@@ -342,7 +342,7 @@ system("cls");
 			printf("\nAdres:\t%s",s.adres);
 			printf("\nTelefon numarasi:\t%s",s.telefonnumarasi);
 			printf("\nMilliyeti:\t%s",s.milliyeti);
-			printf("\nE-Posta:\t%s",s.e-posta);
+			printf("\nE-Posta:\t%s",s.e_posta);
 			printf("\nSure:\t%s",s.sure);
 			printf("\nGelis Tarihi:\t%s",s.gelistarihi);
 			flag=0;
@@ -385,7 +385,7 @@ void edit()
 			printf("\nMilliyetinizi giriniz. :");
 			scanf("%s",&s.milliyeti);
 			printf("\nE-Postanizi giriniz :");
-			scanf("%s",&s.e-posta);
+			scanf("%s",&s.e_posta);
 			printf("\nSurenizi giriniz :");
 			scanf("%s",&s.sure);
 			printf("\nGelis tarihinizi giriniz :");
