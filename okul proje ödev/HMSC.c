@@ -101,27 +101,12 @@ int main(){     // ANA FONKSİYON
 
 	system("cls");   // EKRANİ TEMİZLEMEK İCİN
 	//setcolor(15);
-	printf(" -------------------------------------------------------------------------\n");
-	printf("|                                                                         |\n");      
-	printf("|                                                                         |\n");
-	printf("|  OOOOOO   OOOOOO OOOOOO OOOOOO OOOOOO OOOOOO O      O OOOOOOO  OOOOOO   |\n");
-	printf("|  O        O    O O      O        O      O    O O    O O        O        |\n");
-	printf("|  O  OOOOO OOOOOO OOOOO  OOOOO    O      O    O  O   O O  OOOOO OOOOOO   |\n");
-	printf("|  O    O   O  O   O      O        O      O    O   O  O O    O        O   |\n");
-	printf("|  OOOOOO   O   O  OOOOOO OOOOOO   O    OOOOOO O    O O OOOOOO   OOOOOO   |\n");
-	printf("|                                                                         |\n");                       
-	printf(" -------------------------------------------------------------------------\n");
  	printf("\t\t*************************************************\n");
 	printf("\t\t*                                               *\n");
 	printf("\t\t*       -----------------------------           *\n");
-	printf("\t\t*        OTEL NİRVANAYA HOŞ GELDİNİZ.          *\n");
+	printf("\t\t*        OTEL NİRVANAYA HOŞ GELDİNİZ.           *\n");
 	printf("\t\t*       -----------------------------           *\n");
 	printf("\t\t*                                               *\n");
-	printf("\t\t*                                               *\n");
-	printf("\t\t*                                               *\n");
-	printf("\t\t*    Brought To You By code-projects.org        *\n");
-	printf("\t\t*                 ESP,XYZ                       *\n");
-	printf("\t\t*     CONTACT US:18-87454575552,035455852       *\n");
 	printf("\t\t*************************************************\n\n\n");
 		for(i=0;i<80;i++)
 		printf("-");
