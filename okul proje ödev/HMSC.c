@@ -3,7 +3,7 @@
 #include<ctype.h>
 #include<windows.h>
 #include<stdlib.h>
-#include<time.h>
+
 
 void add();  //Fonksiyon
 void list();
@@ -14,13 +14,13 @@ void search();
 void login()
 {
 	
-	int a=0,i=0;
+	int i=0;
     char ad[10],c=' '; 
     char sifre[10],code[10];
     char kullanici[10]="emre";
     char parola[10]="akyol";
-    do
-{
+    
+
 	system("cls");
 	
     printf("\n  **************************  GIRIS FORMU  **************************  ");
@@ -43,26 +43,17 @@ void login()
 	{
 	printf("  \n\n\n       HOSGELDINIZ !!!! GIRIS BASARILI");
 	
-	break;
+	
 	}
 	else
 	{
 		printf("\n        UZGUNUZ !!!!  GIRIS BASARISIZ");
-		a++;
+		exit(0);
 		
 		getch();
 		
 	}
-}
-	while(a<=2);
-	if (a>2)
-	{
-		printf("\nUzgunuz, dort kez yanlis kullanici adi ve sifre girdiniz!!!");
-		
-		getch();
-		
-		}
-		system("cls");	
+}	
 }
 
 struct CustomerDetails   //STRUCTURE DECLARATION
