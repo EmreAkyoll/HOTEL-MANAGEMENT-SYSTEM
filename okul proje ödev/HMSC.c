@@ -284,13 +284,13 @@ system("cls");
 	if(f==0)
 		exit(0);
 	fflush(stdin);
-	printf("Ayrintilarini aramak icin müsterinin oda numarasini girin: \n");
+	printf("Ayrintilarini aramak icin musterinin oda numarasini girin: \n");
 	scanf("%s", odanumarasi);
 	while(fread(&s,sizeof(s),1,f)==1)
 	{
 		if(strcmp(s.odanumarasi,odanumarasi)==0){
 			flag=0;
-			printf("\n\tRecord Found\n ");
+			printf("\n\t****Kayıt Bulundu****\n ");
 			printf("\nOda numarasi :\t%s",s.odanumarasi);
 			printf("\nIsim:\t%s",s.isim);
 			printf("\nAdres:\t%s",s.adres);
