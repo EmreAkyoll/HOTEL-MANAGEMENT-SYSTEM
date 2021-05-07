@@ -87,18 +87,14 @@ int main(){     // ANA FONKSİYON
 
 	system("cls");   // EKRANİ TEMİZLEMEK İCİN
 	
- 	printf("\t\t§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§\n");
+ 	printf("\t\t $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
 	printf("\t\t|                                               |\n");
 	printf("\t\t|       -----------------------------           |\n");
 	printf("\t\t|        OTEL NIRVANAYA HOŞ GELDINIZ            |\n");
 	printf("\t\t|       -----------------------------           |\n");
 	printf("\t\t|                                               |\n");
-	printf("\t\t§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§\n\n\n");
-		for(i=0;i<80;i++)
-		printf("-");
-	    printf("\nGuncel tarih ve saat : %s",ctime(&t));
-	    for(i=0;i<80;i++)
-		printf("-");
+	printf("\t\t $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n\n\n");
+		
 	printf(" \nDevam etmek icin herhangi bir tusa basin:");
 	
 	getch();	
@@ -132,11 +128,7 @@ int main(){     // ANA FONKSİYON
 		printf(" \n 6'yi sec -> Cikis");
 		printf("\n-----------------");
 		printf("\n");
-		for(i=0;i<80;i++)
-		printf("-");
-	    printf("\nGuncel tarih ve zaman : %s",ctime(&t));
-	    for(i=0;i<80;i++)
-		printf("-");
+		
 		
 		choice=getche();
 		choice=toupper(choice);
