@@ -11,20 +11,6 @@ void edit();  //GLOBALLY DECLARED FUNCTIONS N VARIABLE
 void delete1();
 void search();
 
-/*void setcolor(int ForgC)
-{ WORD wColor;
-HANDLE hStdOut=GetStdHandle(STD_OUTPUT_HANDLE);
-CONSOLE_SCREEN_BUFFER_INFO csbi;
-
-if(GetConsoleScreenBufferInfo(hStdOut,&csbi))
-{
-	wColor=(csbi.wAttributes & 0xB0)+(ForgC & 0x0B);
-//	SetConsoleTextAttributes(hStdOut,wColor);
-	SetConsoleTextAttribute(hStdOut,wColor);
-	
-}
-}*/
-
 void login()
 {
 	
@@ -100,14 +86,14 @@ int main(){     // ANA FONKSİYON
 	char choice;
 
 	system("cls");   // EKRANİ TEMİZLEMEK İCİN
-	//setcolor(15);
- 	printf("\t\t*************************************************\n");
-	printf("\t\t*                                               *\n");
-	printf("\t\t*       -----------------------------           *\n");
-	printf("\t\t*        OTEL NİRVANAYA HOŞ GELDİNİZ.           *\n");
-	printf("\t\t*       -----------------------------           *\n");
-	printf("\t\t*                                               *\n");
-	printf("\t\t*************************************************\n\n\n");
+	
+ 	printf("\t\t§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§\n");
+	printf("\t\t|                                               |\n");
+	printf("\t\t|       -----------------------------           |\n");
+	printf("\t\t|        OTEL NIRVANAYA HOŞ GELDINIZ            |\n");
+	printf("\t\t|       -----------------------------           |\n");
+	printf("\t\t|                                               |\n");
+	printf("\t\t§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§\n\n\n");
 		for(i=0;i<80;i++)
 		printf("-");
 	    printf("\nGuncel tarih ve saat : %s",ctime(&t));
@@ -122,7 +108,7 @@ int main(){     // ANA FONKSİYON
 	while (1)      
 	{
 		system("cls");
-		//setcolor(10);
+		
 		 for(i=0;i<80;i++)
 		printf("-");
 		printf("\n");
@@ -130,7 +116,7 @@ int main(){     // ANA FONKSİYON
 		for(i=0;i<80;i++)
 		printf("-");
 		printf("\n");
-		//setcolor(10);
+		
 		printf("\t\t *Lutfen menu seciminizi girin*:");
 		printf("\n\n");
 		printf(" \n 1'i sec -> Oda rezervasyonu yapin");
