@@ -54,7 +54,7 @@ void login()
 		
 	}
 }	
-}
+
 
 struct CustomerDetails   //STRUCTURE DECLARATION
 {
@@ -290,7 +290,7 @@ system("cls");
 	{
 		if(strcmp(s.odanumarasi,odanumarasi)==0){
 			flag=0;
-			printf("\n\t****Kayıt Bulundu****\n ");
+			printf("\n\t****Kayit Bulundu****\n ");
 			printf("\nOda numarasi :\t%s",s.odanumarasi);
 			printf("\nIsim:\t%s",s.isim);
 			printf("\nAdres:\t%s",s.adres);
