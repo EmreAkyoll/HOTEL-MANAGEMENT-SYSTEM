@@ -71,8 +71,7 @@ struct CustomerDetails   //STRUCTURE DECLARATION
 int main(){     // ANA FONKSİYON	
 	int i=0;
 	
-	time_t t;
-	time(&t);
+	
 	char customername;
 	char choice;
 
