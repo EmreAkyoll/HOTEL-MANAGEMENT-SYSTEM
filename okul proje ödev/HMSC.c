@@ -94,13 +94,9 @@ int main(){     // ANA FONKSİYON
 	
 		system("cls");
 		
-		 for(i=0;i<80;i++)
-		printf("-");
-		printf("\n");
+		 
 		printf("   ******************************  |ANA MENU|  ***************************** \n");
-		for(i=0;i<80;i++)
-		printf("-");
-		printf("\n");
+		
 		
 		printf("\t\t *Lutfen menu seciminizi girin*:");
 		printf("\n\n");
