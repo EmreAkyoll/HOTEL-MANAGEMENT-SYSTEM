@@ -91,8 +91,7 @@ int main(){     // ANA FONKSİYON
     system("cls");
     login();
     system("cls");
-	while (1)      
-	{
+	
 		system("cls");
 		
 		 for(i=0;i<80;i++)
@@ -147,7 +146,6 @@ int main(){     // ANA FONKSİYON
 				printf("\n Devam etmek icin herhangi bir tusa basin");
 				getch();
 		}
-	}
 }
 
 void add()
