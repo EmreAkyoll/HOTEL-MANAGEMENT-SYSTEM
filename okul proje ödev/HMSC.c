@@ -165,24 +165,24 @@ void add()
 	while(1)
 	{
 		system("cls");
-		printf("\n Musteri ayrintilarini girin. :");
+		printf("\n Musteri ayrintilarini giriniz :");
 		printf("\n**************************");
-		printf("\n Oda numarasini girin.:\n");
+		printf("\n Oda numarasini giriniz :\n");
 		scanf("\n%s",s.odanumarasi);
 		fflush(stdin);
-		printf("Isim giriniz.:\n");
+		printf("Isim giriniz :\n");
 		scanf("%s",s.isim);
-		printf("Adres giriniz.:\n");
+		printf("Adres giriniz :\n");
 		scanf("%s",s.adres);
-		printf("Telefon numarasini giriniz.:\n");
+		printf("Telefon numarasini giriniz :\n");
 		scanf("%s",s.telefonnumarasi);
-		printf("Milliyetini giriniz.:\n");
+		printf("Milliyetini giriniz :\n");
 		scanf("%s",s.milliyeti);
-		printf("E-postayi giriniz.:\n");
+		printf("E-postayi giriniz :\n");
 		scanf(" %s",s.e_posta);
-		printf("Sureyi giriniz.(\'x\'days):\n");
+		printf("Sureyi giriniz : (\'x\'days):\n");
 		scanf("%s",&s.sure);
-		printf("Gelis tarihini giriniz.(dd\\mm\\yyyy):\n");
+		printf("Gelis tarihini giriniz : (dd\\mm\\yyyy):\n");
 		scanf("%s",&s.gelistarihi);
 		fwrite(&s,sizeof(s),1,f);
 		fflush(stdin);
