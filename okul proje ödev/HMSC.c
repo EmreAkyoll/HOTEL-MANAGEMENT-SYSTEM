@@ -5,7 +5,7 @@
 void ekle();  //Fonksiyon
 void goster();
 void duzenle();  //GLOBALLY DECLARED FUNCTIONS N VARIABLE
-void delete1();
+void sil();
 void search();
 
 void giris()
@@ -126,7 +126,8 @@ int main(){     // ANA FONKSİYON
 				goster();
 				break;
 			case '3':
-				delete1();break;
+				sil();
+				break;
 			case '4':
 				search();break;
 			case '5':
@@ -229,7 +230,7 @@ void goster()
 	getch();
 }
 
-void delete1()
+void sil()
 {
 	FILE *f,*t;
 	int i=1;
