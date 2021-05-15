@@ -8,7 +8,7 @@ void edit();  //GLOBALLY DECLARED FUNCTIONS N VARIABLE
 void delete1();
 void search();
 
-void login()
+void giris()
 {
 	
 	int i=0;
@@ -86,7 +86,7 @@ int main(){     // ANA FONKSİYON
 	
 	getch();	
     system("cls");
-    login();
+    giris();
     system("cls");
 	
 	while (1)
