@@ -329,7 +329,7 @@ void edit()
 			printf("\nAdres giriniz.       :");
 			scanf("%s",&s.adres);
 			printf("\nTelefon numarasi giriniz. :");
-			scanf("%f",&s.telefonnumarasi);
+			scanf("%s",&s.telefonnumarasi);
 			printf("\nMilliyetinizi giriniz. :");
 			scanf("%s",&s.milliyeti);
 			printf("\nE-Postanizi giriniz :");
