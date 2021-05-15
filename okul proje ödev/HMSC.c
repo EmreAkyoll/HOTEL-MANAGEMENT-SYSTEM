@@ -182,7 +182,7 @@ void add()
 		scanf("%s",&s.gelistarihi);
 		fwrite(&s,sizeof(s),1,f);
 		fflush(stdin);
-		printf("\n\n1 Oda basariyla rezerve edildi.!!");
+		printf("\n\nOda basariyla rezerve edildi.!!");
 		printf("\n Cikmak icin esc tusuna, baska bir musteri ayrintisi eklemek icin baska bir tusa basiniz.:");
 		test=getche();
 		if(test==27)
