@@ -3,7 +3,7 @@
 
 
 void ekle();  //Fonksiyon
-void list();
+void goster();
 void edit();  //GLOBALLY DECLARED FUNCTIONS N VARIABLE
 void delete1();
 void search();
@@ -123,7 +123,8 @@ int main(){     // ANA FONKSİYON
 				ekle();
 				break;
 			case '2':
-				list();break;
+				goster();
+				break;
 			case '3':
 				delete1();break;
 			case '4':
@@ -192,7 +193,7 @@ void ekle()
 	fclose(f);
 }
 
-void list()
+void goster()
 {
 	FILE *f;
 	int i;
