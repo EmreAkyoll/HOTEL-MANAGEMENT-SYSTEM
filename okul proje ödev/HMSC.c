@@ -4,7 +4,7 @@
 
 void ekle();  //Fonksiyon
 void goster();
-void edit();  //GLOBALLY DECLARED FUNCTIONS N VARIABLE
+void duzenle();  //GLOBALLY DECLARED FUNCTIONS N VARIABLE
 void delete1();
 void search();
 
@@ -130,7 +130,8 @@ int main(){     // ANA FONKSİYON
 			case '4':
 				search();break;
 			case '5':
-				edit();break;
+				duzenle();
+				break;
 			case '6':
 				system("cls");
 				printf("\n\n\t *****HIZMETIMIZE GUVENDIGINIZ ICIN TESEKKUR EDERIZ*****");
@@ -306,7 +307,7 @@ system("cls");
 	fclose(f);
 }
 
-void edit()
+void duzenle()
 {
 	FILE *f;
 	int k=1;
