@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 
-void add();  //Fonksiyon
+void ekle();  //Fonksiyon
 void list();
 void edit();  //GLOBALLY DECLARED FUNCTIONS N VARIABLE
 void delete1();
@@ -120,7 +120,8 @@ int main(){     // ANA FONKSİYON
 		switch(choice)           
 		{	
 			case '1':
-				add();break;
+				ekle();
+				break;
 			case '2':
 				list();break;
 			case '3':
@@ -145,7 +146,7 @@ int main(){     // ANA FONKSİYON
 	}
 }
 
-void add()
+void ekle()
 {
 	FILE *f;
 	char test;
