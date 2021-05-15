@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<conio.h>
-#include<ctype.h>
 #include<stdlib.h>
 
 
@@ -91,7 +90,9 @@ int main(){     // ANA FONKSİYON
     login();
     system("cls");
 	
-		system("cls");
+	while (1)
+	{
+	        system("cls");
 		
 		 
 		printf("   ******************************  |ANA MENU|  ***************************** \n");
@@ -116,7 +117,7 @@ int main(){     // ANA FONKSİYON
 		printf("menuden sectiginiz bolumun numarasini giriniz:");
 		
 		choice=getche();
-		choice=toupper(choice);
+		
 		switch(choice)           
 		{	
 			case '1':
@@ -142,6 +143,7 @@ int main(){     // ANA FONKSİYON
 				printf("\n Devam etmek icin herhangi bir tusa basin");
 				getch();
 		}
+	}
 }
 
 void add()
