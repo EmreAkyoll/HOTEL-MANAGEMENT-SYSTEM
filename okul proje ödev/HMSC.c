@@ -69,8 +69,8 @@ int main(){     // ANA FONKSİYON
 	int i=0;
 	
 	
-	char customername;
-	char choice;
+	
+	char sec;
 
 	system("cls");   // EKRANİ TEMİZLEMEK İCİN
 	
@@ -115,9 +115,9 @@ int main(){     // ANA FONKSİYON
 		
 		printf("menuden sectiginiz bolumun numarasini giriniz:");
 		
-		choice=getche();
+		sec=getche();
 		
-		switch(choice)           
+		switch(sec)           
 		{	
 			case '1':
 				ekle();
