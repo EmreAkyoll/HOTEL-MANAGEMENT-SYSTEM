@@ -53,7 +53,7 @@ void giris()
 }	
 
 
-struct CustomerDetails   //STRUCTURE DECLARATION
+struct musteridetayi   //STRUCTURE DECLARATION
 {
 	char odanumarasi[10];
 	char isim[20];
