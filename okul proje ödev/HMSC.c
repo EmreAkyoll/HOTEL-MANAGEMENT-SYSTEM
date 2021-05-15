@@ -113,6 +113,7 @@ int main(){     // ANA FONKSİYON
 		printf("\n-----------------");
 		printf("\n");
 		
+		printf("menuden sectiginiz bolumun numarasini giriniz:");
 		
 		choice=getche();
 		choice=toupper(choice);
