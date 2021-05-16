@@ -1,6 +1,9 @@
-#include<stdio.h>
-#include<stdlib.h>
 
+#include<stdio.h>
+#include<conio.h>
+#include<ctype.h>
+#include<windows.h>
+#include<stdlib.h>
 
 void ekle();  //Fonksiyon
 void goster();
@@ -77,7 +80,7 @@ int main(){     // ANA FONKSİYON
  	printf("\t\t $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
 	printf("\t\t|                                               |\n");
 	printf("\t\t|       -----------------------------           |\n");
-	printf("\t\t|        OTEL NIRVANAYA HOŞ GELDINIZ            |\n");
+	printf("\t\t|        OTEL NIRVANAYA HOSGELDINIZ            |\n");
 	printf("\t\t|       -----------------------------           |\n");
 	printf("\t\t|                                               |\n");
 	printf("\t\t $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n\n\n");
