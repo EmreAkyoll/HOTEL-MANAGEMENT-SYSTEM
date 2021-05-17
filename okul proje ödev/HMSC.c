@@ -294,7 +294,7 @@ int main(){     // ANA FONKSİYON
  	printf("\t\t $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
 	printf("\t\t|                                               |\n");
 	printf("\t\t|       -----------------------------           |\n");
-	printf("\t\t|        OTEL NIRVANAYA HOSGELDINIZ            |\n");
+	printf("\t\t|        OTEL NIRVANAYA HOSGELDINIZ             |\n");
 	printf("\t\t|       -----------------------------           |\n");
 	printf("\t\t|                                               |\n");
 	printf("\t\t $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n\n\n");
