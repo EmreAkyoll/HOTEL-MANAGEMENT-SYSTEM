@@ -5,11 +5,19 @@
 #include<windows.h>
 #include<stdlib.h>
 
-void ekle();  //Fonksiyon
-void goster();
-void duzenle();  //GLOBALLY DECLARED FUNCTIONS N VARIABLE
-void sil();
-void ara();
+struct musteridetayi   //STRUCTURE DECLARATION
+{
+	char odanumarasi[10];
+	char isim[20];
+	char adres[25];
+	char telefonnumarasi[15];
+	char milliyeti[15];	
+	char e_posta[20];
+	char sure[10];
+	char gelistarihi[10];
+}s;
+
+
 
 void giris()
 {
@@ -23,10 +31,10 @@ void giris()
 
 	system("cls");
 	
-    printf("\n  **************************  GIRIS FORMU  **************************  ");
-    printf(" \n                       KULLANICI ADI GIRINIZ:-");
+    printf("\n  \t}-----------------------------{+} |GIRIS FORMU| {+}--------------------------------{   ");
+    printf(" \n\n                       KULLANICI ADI GIRINIZ:-");
 	scanf("%s", &ad); 
-	printf(" \n                       PAROLANIZI GIRINIZ:-");
+    printf(" \n\n                       PAROLANIZI GIRINIZ:-");
 	while(i<10)
 	{
 	    sifre[i]=getch();
@@ -53,105 +61,9 @@ void giris()
 		getch();
 		
 	}
-}	
-
-
-struct musteridetayi   //STRUCTURE DECLARATION
-{
-	char odanumarasi[10];
-	char isim[20];
-	char adres[25];
-	char telefonnumarasi[15];
-	char milliyeti[15];	
-	char e_posta[20];
-	char sure[10];
-	char gelistarihi[10];
-}s;
-
-int main(){     // ANA FONKSİYON	
-	int i=0;
-	
-	
-	
-	char sec;
-
-	system("cls");   // EKRANİ TEMİZLEMEK İCİN
-	
- 	printf("\t\t $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
-	printf("\t\t|                                               |\n");
-	printf("\t\t|       -----------------------------           |\n");
-	printf("\t\t|        OTEL NIRVANAYA HOSGELDINIZ            |\n");
-	printf("\t\t|       -----------------------------           |\n");
-	printf("\t\t|                                               |\n");
-	printf("\t\t $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n\n\n");
-		
-	printf(" \nDevam etmek icin herhangi bir tusa basin:");
-	
-	getch();	
-    system("cls");
-    giris();
-    system("cls");
-	
-	while (1)
-	{
-	        system("cls");
-		
-		 
-		printf("   ******************************  |ANA MENU|  ***************************** \n");
-		
-		
-		printf("\t\t *Lutfen menu seciminizi girin*:");
-		printf("\n\n");
-		printf(" \n 1'i sec -> Oda rezervasyonu yapin");
-		printf("\n------------------------");
-		printf(" \n 2'yi sec -> Musteri Kaydini Goruntule");
-		printf("\n----------------------------------");
-		printf(" \n 3'u sec -> Musteri kaydini sil");
-		printf("\n-----------------------------------");
-		printf(" \n 4'u sec -> Musteri kaydini ara");
-		printf("\n-----------------------------------");
-		printf(" \n 5'i sec -> Kaydi duzenleme");
-		printf("\n-----------------------");
-		printf(" \n 6'yi sec -> Cikis");
-		printf("\n-----------------");
-		printf("\n");
-		
-		printf("menuden sectiginiz bolumun numarasini giriniz:");
-		
-		sec=getche();
-		
-		switch(sec)           
-		{	
-			case '1':
-				ekle();
-				break;
-			case '2':
-				goster();
-				break;
-			case '3':
-				sil();
-				break;
-			case '4':
-				ara();
-				break;
-			case '5':
-				duzenle();
-				break;
-			case '6':
-				system("cls");
-				printf("\n\n\t *****HIZMETIMIZE GUVENDIGINIZ ICIN TESEKKUR EDERIZ*****");
-	
-			//	Sleep(2000);
-				exit(0);
-				break;
-			default:
-				system("cls");
-				printf("Yanlis giris");
-				printf("\n Devam etmek icin herhangi bir tusa basin");
-				getch();
-		}
-	}
 }
+
+
 
 void ekle()
 {
@@ -199,6 +111,8 @@ void ekle()
 	fclose(f);
 }
 
+
+
 void goster()
 {
 	FILE *f;
@@ -233,6 +147,8 @@ void goster()
 	fclose(f);
 	getch();
 }
+
+
 
 void sil()
 {
@@ -276,6 +192,8 @@ void sil()
 	getch();
 }
 
+
+
 void ara()
 {
 system("cls");
@@ -311,6 +229,8 @@ system("cls");
 	getch();
 	fclose(f);
 }
+
+
 
 void duzenle()
 {
@@ -361,3 +281,86 @@ void duzenle()
 	getch();
 }
 }
+
+
+int main(){     // ANA FONKSİYON	
+	
+	int i=0;
+	
+	char sec;
+
+	system("cls");   // EKRANİ TEMİZLEMEK İCİN
+	
+ 	printf("\t\t $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+	printf("\t\t|                                               |\n");
+	printf("\t\t|       -----------------------------           |\n");
+	printf("\t\t|        OTEL NIRVANAYA HOSGELDINIZ            |\n");
+	printf("\t\t|       -----------------------------           |\n");
+	printf("\t\t|                                               |\n");
+	printf("\t\t $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n\n\n");
+		
+	printf(" \nDevam etmek icin herhangi bir tusa basin:");
+	
+	getch();	
+    system("cls");
+    giris();
+    system("cls");
+	
+	while (1)
+	{
+	        system("cls");
+		
+		 
+		printf("\t}-----------------------------{+} |ANA MENU| {+}--------------------------------{  \n");
+		
+		
+		printf("\n\t\t\t\t {1} -> Oda rezervasyonu yapin");
+		printf("\n\t\t\t\t {2} -> Musteri Kaydini Goruntule");
+		printf("\n\t\t\t\t {3} -> Musteri kaydini sil");
+		printf("\n\t\t\t\t {4} -> Musteri kaydini ara");
+		printf("\n\t\t\t\t {5} -> Kaydi duzenleme");
+	        printf("\n\t\t\t\t {6} -> Cikis");
+		
+		printf("\n\n\tMenuden sectiginiz bolumun numarasini giriniz:");
+		
+		sec=getche();
+		
+		switch(sec)           
+		{	
+			case '1':
+				ekle();
+				break;
+			case '2':
+				goster();
+				break;
+			case '3':
+				sil();
+				break;
+			case '4':
+				ara();
+				break;
+			case '5':
+				duzenle();
+				break;
+			case '6':
+				system("cls");
+				printf("\n\n\t *****HIZMETIMIZE GUVENDIGINIZ ICIN TESEKKUR EDERIZ*****");
+	
+			//	Sleep(2000);
+				exit(0);
+				break;
+			default:
+				system("cls");
+				printf("Yanlis giris");
+				printf("\n Devam etmek icin herhangi bir tusa basin");
+				getch();
+		}
+	}
+}
+
+
+
+
+
+
+
