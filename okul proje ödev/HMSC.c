@@ -5,11 +5,11 @@
 #include<windows.h>
 #include<stdlib.h>
 
-void add();  
-void list();
-void edit();  
-void delete1();
-void search();
+void ekle();  
+void goster();
+void duzenle();  
+void sil();
+void ara();
 
 struct musteridetayi   //STRUCTURE DECLARATION
 {
