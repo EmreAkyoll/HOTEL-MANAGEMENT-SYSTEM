@@ -11,7 +11,7 @@ void duzenle();
 void sil();
 void ara();
 
-struct musteridetayi   //STRUCTURE DECLARATION
+struct musteridetayi   
 {
 	char odanumarasi[10];
 	char isim[20];
@@ -50,9 +50,9 @@ void giris()
 	    i++;
 	}
 	sifre[i]='\0';
-	//char code=sifre;
+	
 	i=0;
-	//scanf("%s",&sifre); 
+	 
 		if(strcmp(ad,kullanici)==0 && strcmp(sifre,parola)==0)
 	{
 	printf("  \n\n\n       HOSGELDINIZ !!!! GIRIS BASARILI");
@@ -70,13 +70,13 @@ void giris()
 }
 
 
-int main(){     // ANA FONKSİYON	
+int main(){     	
 	
 	int i=0;
 	
 	char sec;
 
-	system("cls");   // EKRANİ TEMİZLEMEK İCİN
+	system("cls");   
 	
  	printf("\t\t $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
 	printf("\t\t|                                               |\n");
@@ -133,7 +133,7 @@ int main(){     // ANA FONKSİYON
 				system("cls");
 				printf("\n\n\t *****HIZMETIMIZE GUVENDIGINIZ ICIN TESEKKUR EDERIZ*****");
 	
-			//	Sleep(2000);
+			
 				exit(0);
 				break;
 			default:
@@ -213,11 +213,7 @@ void goster()
 		printf("-");
 	while(fread(&s,sizeof(s),1,f)==1)
 	{
-		/*printf("ODANUMARASİ :\t%s\n",s.odanumarasi);
-		printf("İSİM:\t%s\n",,s.isim);
-		printf("ADRES:\t%s\n",s.adres);
-		printf("TELEFONNUMARASİ:\t%s\n",s.telefonnumarasi);
-		printf("MİLLİYETİ \n");*/
+		
 		printf("\n%s \t%s \t\t%s \t\t%s \t%s  \t%s  \t     %s  \t  %s",s.odanumarasi, s.isim , s.adres , s.telefonnumarasi ,s.milliyeti ,s.e_posta,s.sure,  s.gelistarihi);
 	}
 	printf("\n");
@@ -254,8 +250,6 @@ void sil()
 	if(i==1)
 	{       
 		printf("\n\n Bu Oda numarasindaki Musteri kayitlari bulunamadi!!");
-		//remove("E:/file.txt");
-	   //rename("E:/temp.txt","E:/file.txt");
 		getch();
 		fclose(f);
 		fclose(t);
@@ -343,7 +337,7 @@ void duzenle()
 			scanf("%s",&s.sure);
 			printf("\nGelis tarihinizi giriniz :");
 			scanf("%s",&s.gelistarihi);
-			fseek(f,size,SEEK_CUR);  //istenen pozisyona gitmek icin
+			fseek(f,size,SEEK_CUR);  
 			fwrite(&s,sizeof(s),1,f);
 			break;
 		}
