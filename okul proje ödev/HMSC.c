@@ -77,13 +77,9 @@ int main(){
 
 	system("cls");   
 	
- 	printf("\t\t $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
-	printf("\t\t|                                               |\n");
-	printf("\t\t|       -----------------------------           |\n");
+ 	printf("\t\t|       -----------------------------           |\n");
 	printf("\t\t|        OTEL NIRVANAYA HOSGELDINIZ             |\n");
 	printf("\t\t|       -----------------------------           |\n");
-	printf("\t\t|                                               |\n");
-	printf("\t\t $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n\n\n");
 		
 	printf(" \nDevam etmek icin herhangi bir tusa basin:");
 	
