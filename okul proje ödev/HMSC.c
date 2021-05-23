@@ -30,8 +30,8 @@ void giris()
 	int i=0;
     char ad[10],c=' '; 
     char sifre[10];
-    char kullanici[10]="emre";
-    char parola[10]="akyol";
+    char kullanici[10]="yağmur";
+    char parola[10]="emre";
     
 
 	system("cls");
