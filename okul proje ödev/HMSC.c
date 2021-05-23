@@ -145,9 +145,9 @@ void ekle()
 {
 	FILE *f;
 	char test;
-	f=fopen("add.txt","a+");
+	f=fopen("nirvana.txt","a+");
 	if(f==0)
-	{   f=fopen("add.txt","w+");
+	{   f=fopen("nirvana.txt","w+");
 		system("cls");
 		printf("Lutfen biz bilgisayarinizda veritabanimizi kurarken bekleyiniz!!");
 		printf("\n Islem tamamlandi. Devam etmek icin herhangi bir tusa basiniz.!! ");
@@ -192,7 +192,7 @@ void goster()
 {
 	FILE *f;
 	int i;
-	if((f=fopen("add.txt","r"))==NULL)
+	if((f=fopen("nirvana.txt","r"))==NULL)
 		exit(0);
 	system("cls");
 	printf("ODA    ");
@@ -224,7 +224,7 @@ void sil()
 	char odanumarasi[20];
 	if((t=fopen("temp.txt","w"))==NULL)
 	exit(0);
-	if((f=fopen("add.txt","r"))==NULL)
+	if((f=fopen("nirvana.txt","r"))==NULL)
 	exit(0);
 	system("cls");
 	printf("Veri tabanindan silinecek otelin Oda Numarasini giriniz: \n");
@@ -249,8 +249,8 @@ void sil()
 	}
 	fclose(f);
 	fclose(t);
-	remove("add.txt");
-	rename("temp.txt","add.txt");
+	remove("nirvana.txt");
+	rename("temp.txt","nirvana.txt");
 	printf("\n\nMusteri basariyla kaldirildi....");
 	fclose(f);
 	fclose(t);
@@ -264,7 +264,7 @@ system("cls");
 	FILE *f;
 	char odanumarasi[20];
 	int flag=1;
-	f=fopen("add.txt","r+");
+	f=fopen("nirvana.txt","r+");
 	if(f==0)
 		exit(0);
 	fflush(stdin);
@@ -301,7 +301,7 @@ void duzenle()
 	int k=1;
 	char odanumarasi[20];
 	long int size=sizeof(s);
-	if((f=fopen("add.txt","r+"))==NULL)
+	if((f=fopen("nirvana.txt","r+"))==NULL)
 		exit(0);
 	system("cls");
 	printf("Duzenlemek icin musterinin Oda numarasini girin:\n\n");
