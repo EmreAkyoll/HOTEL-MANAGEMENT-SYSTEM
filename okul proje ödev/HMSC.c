@@ -31,7 +31,7 @@ void giris()
 	int i=0;
     char ad[10],c=' '; 
     char sifre[10];
-    char kullanici[10]="yağmur";
+    char kullanici[10]="yagmur";
     char parola[10]="emre";
     
 
