@@ -148,13 +148,7 @@ void ekle()
 	FILE *f;
 	char test;
 	f=fopen("nirvana.txt","a+");
-	if(f==0)
-	{   f=fopen("nirvana.txt","w+");
-		system("cls");
-		printf("Lutfen biz bilgisayarinizda veritabanimizi kurarken bekleyiniz!!");
-		printf("\n Islem tamamlandi. Devam etmek icin herhangi bir tusa basiniz.!! ");
-		getch();
-	}
+	
 	while(1)
 	{
 		system("cls");
