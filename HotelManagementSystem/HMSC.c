@@ -1,5 +1,5 @@
-//EMRE AKYOL 200403635
-//YAĞMUR FİDAN 200403717
+//EMRE AKYOL 
+//YAĞMUR FİDAN 
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
