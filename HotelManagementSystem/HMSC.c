@@ -1,5 +1,5 @@
-//EMRE AKYOL 
-//YAĞMUR FİDAN 
+//EMRE  
+//YAĞMUR  
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
